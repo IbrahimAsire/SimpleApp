@@ -1,9 +1,3 @@
-//
-//  SimpleAppUITestsLaunchTests.swift
-//  SimpleAppUITests
-//
-//  Created by ibrahim asiri on 01/09/1443 AH.
-//
 
 import XCTest
 

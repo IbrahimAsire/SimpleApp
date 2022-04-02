@@ -1,9 +1,3 @@
-//
-//  SimpleAppTests.swift
-//  SimpleAppTests
-//
-//  Created by ibrahim asiri on 01/09/1443 AH.
-//
 
 import XCTest
 @testable import SimpleApp

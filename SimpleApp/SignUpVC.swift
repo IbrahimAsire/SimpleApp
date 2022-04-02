@@ -32,6 +32,20 @@ class SignUpVC: UIViewController {
         $0.backgroundColor = .black
         return $0
     }(UIButton())
+    
+    let forgetLbl: UILabel = {
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.text = "Forget password?"
+        $0.textColor = .black
+        return $0
+    }(UILabel())
+    
+    let orSignUpLbl: UILabel = {
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.text = "Or sgnUp"
+        $0.textColor = .black
+        return $0
+    }(UILabel())
 
 
     override func viewDidLoad() {
@@ -46,6 +60,8 @@ class SignUpVC: UIViewController {
         view.addSubview(nameTF)
         view.addSubview(passwordTF)
         view.addSubview(signInBtn)
+        view.addSubview(forgetLbl)
+        view.addSubview(orSignUpLbl)
         
         signInBtn.layer.cornerRadius = 5
         
@@ -65,6 +81,11 @@ class SignUpVC: UIViewController {
             signInBtn.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             signInBtn.widthAnchor.constraint(equalToConstant: 280),
             
+            forgetLbl.topAnchor.constraint(equalTo: signInBtn.bottomAnchor, constant: 12),
+            forgetLbl.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 54),
+            
+            orSignUpLbl.topAnchor.constraint(equalTo: forgetLbl.bottomAnchor, constant: 12),
+            orSignUpLbl.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 54),
             
             
         
